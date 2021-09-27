@@ -1,0 +1,8 @@
+Error: Address already in use 
+
+Resolution:
+
+lsof -wni tcp:3000 - where 3000 is whatever port number that was rejected.
+kill -9 PID - where PID is the PID of the offending process.
+
+

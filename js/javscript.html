@@ -1,0 +1,11 @@
+var buttons = $("button"),
+
+    interval = setInterval(function () {
+        var btn = $('.is-following');
+        console.log("Clicking:", btn);
+        btn.click();
+        if (buttons.length === 0) {
+            clearInterval(interval);
+        }
+        window.scrollTo(0, document.body.scrollHeight);
+    }, 1000);
