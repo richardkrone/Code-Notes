@@ -1,0 +1,16 @@
+<!--https://linuxhint.com/install-mysql-linux-mint-ubuntu/-->
+sudo apt update
+sudo apt install mysql-server
+mysql --version
+systemctl status mysql
+sudo mysql_secure_installation
+sudo mysql
+CREATE USER user_name@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *. * TO user_name@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+mysql -u username –p
+CREATE DATABASE database_name;
+show databases;
+
+If MySQL is installed before phpmyadmin you can run: sudo dpkg-reconfigure phpmyadmin 
